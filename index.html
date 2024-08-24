@@ -1,0 +1,113 @@
+<style>
+.slider {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.white-spacer {
+  background-color: #fff;
+  min-height: 165px;
+  width: 100%;
+}
+
+.content-wrapper {
+  background-color: #432711;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 1274px;
+  width: 100%;
+  align-items: center;
+  padding: 609px 80px 90px;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-container {
+  position: relative;
+  display: flex;
+  width: 1195px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.subheading {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 90px;
+  margin-top: 40px;
+}
+
+.instagram-logo {
+  aspect-ratio: 0.99;
+  object-fit: contain;
+  object-position: center;
+  width: 260px;
+  margin-top: 57px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .white-spacer,
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding: 100px 20px 0;
+  }
+
+  .heading {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .subheading {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .instagram-logo {
+    margin-top: 40px;
+  }
+}
+</style>
+
+<section class="slider">
+  <div class="white-spacer"></div>
+  <div class="content-wrapper">
+    <div class="main-content">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aea3ce0973269d8e7298e606f61f05444ab4565d6a1daff882c92243db696d53?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="background-image" />
+      <div class="text-container">
+        <h2 class="heading">Stiamo perfezionando la nostra presenza online.</h2>
+        <p class="subheading">Nel frattempo seguiteci <br /> su Instagram!</p>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/64fcd4b3cd2881dba46f1df104d2279ac1b8ca3b605651af57c8aba7d78f87ec?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Instagram logo" class="instagram-logo" />
+      </div>
+    </div>
+  </div>
+</section>
