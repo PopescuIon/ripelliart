@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Section</title>
+    <title>Ripelliart Header</title>
     <style>
-        .contact-section {
-            background-color: #ebebeb;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            color: #432711;
+        body, html {
+            margin: 0;
+            padding: 0;
             font-family: Ubuntu, sans-serif;
+        }
+        .ripelliart-header {
+            background-color: rgba(235, 235, 235, 1);
+            color: rgba(67, 39, 17, 1);
             font-weight: 700;
-            font-size: 30px;
-            line-height: 45px;
+            font-size: 24px;
+            line-height: 36px;
         }
-        .top-border {
-            background-color: #d9d9d9;
+        .header-top {
+            background-color: rgba(217, 217, 217, 1);
+            height: 5px;
             width: 100%;
-            height: 1px;
         }
-        .content-wrapper {
+        .header-main {
             position: relative;
-            min-height: 100vh;
             width: 100%;
-            padding: 1px 0 1077px;
         }
         .background-image {
             position: absolute;
@@ -35,125 +34,73 @@
             object-fit: cover;
             object-position: center;
         }
-        .header-container {
-            position: relative;
-            background-color: #fff;
-            width: 100%;
-            padding-bottom: 16px;
-        }
-        .header {
-            background-color: #fff;
-            z-index: 10;
-            width: 100%;
-            padding: 45px 70px 7px;
-        }
         .header-content {
+            position: relative;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 20px 5%;
             display: flex;
-            width: 100%;
-            max-width: 1894px;
-            gap: 20px;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
         .logo {
-            aspect-ratio: 4;
-            object-fit: contain;
-            object-position: center;
-            width: 392px;
-            max-width: 100%;
+            max-width: 300px;
+            height: auto;
         }
         .contact-info {
             display: flex;
             align-items: center;
-            gap: 38px;
+            gap: 10px;
         }
         .phone-icon {
-            aspect-ratio: 1;
-            object-fit: contain;
-            object-position: center;
-            width: 48px;
+            width: 36px;
+            height: 36px;
         }
-        .phone-number {
-            margin: 0;
+        .featured-image {
+            display: block;
+            max-width: 524px;
+            width: 100%;
+            height: auto;
+            margin: 5% auto;
         }
-        .footer-image {
-            aspect-ratio: 1.7;
-            object-fit: contain;
-            object-position: center;
-            width: 524px;
-            align-self: center;
-            max-width: 100%;
-            margin: 200px auto -215px;
-        }
-        @media (max-width: 1200px) {
-            .header {
-                padding: 30px 40px 7px;
-            }
-            .logo {
-                width: 300px;
-            }
-            .footer-image {
-                width: 400px;
-                margin: 150px auto -150px;
-            }
-        }
-        @media (max-width: 991px) {
-            .content-wrapper {
-                padding-bottom: 100px;
-            }
-            .header {
-                padding: 20px;
-            }
+        @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 align-items: center;
-                text-align: center;
             }
             .contact-info {
                 margin-top: 20px;
             }
-            .footer-image {
-                width: 300px;
-                margin: 100px auto -100px;
-            }
         }
-        @media (max-width: 576px) {
-            .contact-section {
-                font-size: 24px;
-                line-height: 36px;
+        @media (max-width: 480px) {
+            .ripelliart-header {
+                font-size: 20px;
+                line-height: 30px;
             }
             .logo {
-                width: 200px;
+                max-width: 250px;
             }
             .phone-icon {
-                width: 36px;
-            }
-            .footer-image {
-                width: 200px;
-                margin: 50px auto -50px;
+                width: 30px;
+                height: 30px;
             }
         }
     </style>
 </head>
 <body>
-    <section class="contact-section">
-        <div class="top-border"></div>
-        <div class="content-wrapper">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/900e4410cbcbd12bb99024453df39379f1b4d631bdffbb30f2e31fd1fadeaee5?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Background" class="background-image" />
-            <header class="header-container">
-                <div class="header">
-                    <div class="header-content">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b12fb2fafedd5d953f193c955899fd60d35e80bb7d34b90ef1759e6f170240f?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Company Logo" class="logo" />
-                        <div class="contact-info">
-                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f470ddf32161dac43f6424e241e9307d5d8d058c9c416bd9acac94862120741b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="phone-icon" aria-hidden="true" />
-                            <p class="phone-number">+39 320 215 1166</p>
-                        </div>
-                    </div>
+    <header class="ripelliart-header">
+        <div class="header-top"></div>
+        <div class="header-main">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/900e4410cbcbd12bb99024453df39379f1b4d631bdffbb30f2e31fd1fadeaee5?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Background image" class="background-image">
+            <div class="header-content">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b12fb2fafedd5d953f193c955899fd60d35e80bb7d34b90ef1759e6f170240f?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Ripelliart Logo" class="logo">
+                <div class="contact-info">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f470ddf32161dac43f6424e241e9307d5d8d058c9c416bd9acac94862120741b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Phone icon" class="phone-icon">
+                    <span>+39 320 215 1166</span>
                 </div>
-            </header>
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/767f8da2f588a40bbc079eb28ee0c2484c4c7ef69766ae8c5061744f2a50f374?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="footer-image" aria-hidden="true" />
+            </div>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/767f8da2f588a40bbc079eb28ee0c2484c4c7ef69766ae8c5061744f2a50f374?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Featured image" class="featured-image">
         </div>
-    </section>
+    </header>
 </body>
 </html>
