@@ -1,33 +1,24 @@
 <style>
-.slider {
-  display: flex;
-  flex-direction: column;
-  font-family: Montserrat, sans-serif;
-  color: #fff;
-  text-align: center;
-}
-
-.white-spacer {
+.ripelliart-container {
   background-color: #fff;
-  min-height: 165px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #1d1c34;
+  font: 700 30px/45px Ubuntu, sans-serif;
 }
 
-.content-wrapper {
-  background-color: #432711;
-  display: flex;
+.top-divider {
+  background-color: #d9d9d9;
   width: 100%;
-  flex-direction: column;
+  height: 1px;
 }
 
 .main-content {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  min-height: 1274px;
+  min-height: 1439px;
   width: 100%;
-  align-items: center;
-  padding: 609px 80px 90px;
+  padding: 1px 0 766px;
 }
 
 .background-image {
@@ -39,75 +30,107 @@
   object-position: center;
 }
 
-.text-container {
+.header-wrapper {
   position: relative;
+  background-color: #fff;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.header {
+  background-color: #fff;
+  z-index: 10;
   display: flex;
-  width: 1195px;
-  max-width: 100%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  padding: 45px 70px 7px;
 }
 
-.heading {
-  font-size: 50px;
-  font-weight: 400;
-  align-self: stretch;
+.header-content {
+  display: flex;
+  width: 100%;
+  max-width: 1896px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.subheading {
-  font-size: 80px;
-  font-weight: 700;
-  line-height: 90px;
-  margin-top: 40px;
-}
-
-.instagram-logo {
-  aspect-ratio: 0.99;
+.logo {
+  aspect-ratio: 4;
   object-fit: contain;
   object-position: center;
-  width: 260px;
-  margin-top: 57px;
+  width: 392px;
   max-width: 100%;
+}
+
+.contact-info {
+  display: flex;
+  gap: 30px;
+  margin: auto 0;
+}
+
+.phone-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 49px;
+}
+
+.phone-number {
+  align-self: start;
+}
+
+.main-image {
+  aspect-ratio: 1.7;
+  object-fit: contain;
+  object-position: center;
+  width: 524px;
+  align-self: center;
+  max-width: 100%;
+  margin: 200px 0 -153px;
 }
 
 @media (max-width: 991px) {
-  .white-spacer,
-  .content-wrapper {
-    max-width: 100%;
-  }
-
   .main-content {
     max-width: 100%;
-    padding: 100px 20px 0;
+    padding-bottom: 100px;
   }
 
-  .heading {
+  .header-wrapper {
     max-width: 100%;
-    font-size: 40px;
   }
 
-  .subheading {
+  .header {
     max-width: 100%;
-    font-size: 40px;
-    line-height: 50px;
+    padding: 0 20px;
   }
 
-  .instagram-logo {
-    margin-top: 40px;
+  .header-content {
+    max-width: 100%;
+  }
+
+  .main-image {
+    margin: 40px 0 10px;
   }
 }
 </style>
 
-<section class="slider">
-  <div class="white-spacer"></div>
-  <div class="content-wrapper">
-    <div class="main-content">
-      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aea3ce0973269d8e7298e606f61f05444ab4565d6a1daff882c92243db696d53?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="background-image" />
-      <div class="text-container">
-        <h2 class="heading">Stiamo perfezionando la nostra presenza online.</h2>
-        <p class="subheading">Nel frattempo seguiteci <br /> su Instagram!</p>
-        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/64fcd4b3cd2881dba46f1df104d2279ac1b8ca3b605651af57c8aba7d78f87ec?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Instagram logo" class="instagram-logo" />
+<section class="ripelliart-container">
+  <div class="top-divider"></div>
+  <div class="main-content">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/43efb1adcbe5ad68c756190675fbb3ea776ebab7609968ae1bb277aca13823dd?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="background-image" />
+    <header class="header-wrapper">
+      <div class="header">
+        <div class="header-content">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b12fb2fafedd5d953f193c955899fd60d35e80bb7d34b90ef1759e6f170240f?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Ripelliart Logo" class="logo" />
+          <div class="contact-info">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb8d91f49c4bc4c109bce6dc89e79325365ca3d6faa8ced183deabfbcc4d022b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Phone Icon" class="phone-icon" />
+            <p class="phone-number">+39 320 215 1166</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/767f8da2f588a40bbc079eb28ee0c2484c4c7ef69766ae8c5061744f2a50f374?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Main Content Image" class="main-image" />
   </div>
 </section>
