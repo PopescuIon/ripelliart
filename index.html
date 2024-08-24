@@ -11,19 +11,16 @@
             flex-direction: column;
             overflow: hidden;
             color: #1d1c34;
-            font-family: Ubuntu, sans-serif;
-            font-weight: 700;
-            font-size: 30px;
-            line-height: 45px;
+            font: 700 30px/45px Ubuntu, sans-serif;
         }
         .top-divider {
             background-color: #d9d9d9;
             width: 100%;
             height: 1px;
         }
-        .main-content {
+        .content-wrapper {
             position: relative;
-            min-height: 100vh;
+            min-height: 1439px;
             width: 100%;
             padding: 1px 0 766px;
         }
@@ -42,8 +39,9 @@
             width: 100%;
             padding-bottom: 16px;
             flex-direction: column;
+            margin: -2px 0;
         }
-        .header {
+        .header-content {
             background-color: #fff;
             z-index: 10;
             display: flex;
@@ -52,14 +50,13 @@
             align-items: center;
             padding: 45px 70px 7px;
         }
-        .header-content {
+        .header-inner {
             display: flex;
             width: 100%;
             max-width: 1896px;
             gap: 20px;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
         }
         .logo {
             aspect-ratio: 4;
@@ -71,7 +68,7 @@
         .contact-info {
             display: flex;
             gap: 30px;
-            align-items: center;
+            margin: auto 0;
         }
         .phone-icon {
             aspect-ratio: 1;
@@ -80,7 +77,8 @@
             width: 49px;
         }
         .phone-number {
-            margin: 0;
+            align-self: start;
+            flex-basis: auto;
         }
         .main-image {
             aspect-ratio: 1.7;
@@ -89,40 +87,25 @@
             width: 524px;
             align-self: center;
             max-width: 100%;
-            margin: 200px auto -153px;
-            display: block;
+            margin: 200px 0 -153px;
         }
         @media (max-width: 991px) {
-            .main-content {
+            .content-wrapper {
+                max-width: 100%;
                 padding-bottom: 100px;
             }
-            .header {
-                padding: 20px;
+            .header-container {
+                max-width: 100%;
             }
             .header-content {
-                flex-direction: column;
-                gap: 20px;
+                max-width: 100%;
+                padding: 0 20px;
             }
-            .logo {
-                width: 100%;
-                max-width: 392px;
+            .header-inner {
+                max-width: 100%;
             }
             .main-image {
-                margin: 40px auto 10px;
-                width: 90%;
-            }
-        }
-        @media (max-width: 480px) {
-            .ripelliart-container {
-                font-size: 24px;
-                line-height: 36px;
-            }
-            .contact-info {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .phone-icon {
-                width: 36px;
+                margin: 40px 0 10px;
             }
         }
     </style>
@@ -130,20 +113,20 @@
 <body>
     <section class="ripelliart-container">
         <div class="top-divider"></div>
-        <div class="main-content">
+        <div class="content-wrapper">
             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/43efb1adcbe5ad68c756190675fbb3ea776ebab7609968ae1bb277aca13823dd?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="background-image" />
             <header class="header-container">
-                <div class="header">
-                    <div class="header-content">
+                <div class="header-content">
+                    <div class="header-inner">
                         <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b12fb2fafedd5d953f193c955899fd60d35e80bb7d34b90ef1759e6f170240f?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Ripelliart Logo" class="logo" />
                         <div class="contact-info">
-                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb8d91f49c4bc4c109bce6dc89e79325365ca3d6faa8ced183deabfbcc4d022b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="phone-icon" aria-hidden="true" />
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb8d91f49c4bc4c109bce6dc89e79325365ca3d6faa8ced183deabfbcc4d022b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Phone Icon" class="phone-icon" />
                             <p class="phone-number">+39 320 215 1166</p>
                         </div>
                     </div>
                 </div>
             </header>
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/767f8da2f588a40bbc079eb28ee0c2484c4c7ef69766ae8c5061744f2a50f374?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Main Content Image" class="main-image" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/767f8da2f588a40bbc079eb28ee0c2484c4c7ef69766ae8c5061744f2a50f374?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Main Ripelliart Image" class="main-image" />
         </div>
     </section>
 </body>
