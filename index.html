@@ -1,108 +1,144 @@
 <style>
-  .ripelliart-container {
-    background-color: #ebebeb;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    color: #432711;
-    font: 700 18px/1.5 Ubuntu, sans-serif;
-  }
-  .top-divider {
-    background-color: #d9d9d9;
-    width: 100%;
-    height: 1px;
-  }
-  .main-content {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    padding: 1px 0 50px;
-  }
-  .background-image {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .header-container {
-    position: relative;
-    background-color: #fff;
-    width: 100%;
-    padding-bottom: 8px;
-  }
-  .header {
-    background-color: #fff;
-    z-index: 10;
-    width: 100%;
-    padding: 20px 5%;
-  }
+.ripelliart-container {
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #432711;
+  font: 700 30px/45px Ubuntu, sans-serif;
+}
+
+.top-divider {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 1px;
+}
+
+.content-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding: 1px 0 5rem;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header-container {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.header-content {
+  background-color: #fff;
+  z-index: 10;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.header-flex {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.phone-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.phone-number {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto 0;
+}
+
+@media (min-width: 768px) {
   .header-content {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    padding: 2.5rem 2rem;
   }
+
   .logo {
-    aspect-ratio: 4;
-    object-fit: contain;
-    object-position: center;
-    width: 250px;
-    max-width: 100%;
+    max-width: 392px;
   }
-  .contact-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+
   .phone-icon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: 24px;
+    width: 32px;
+    height: 32px;
   }
+
   .phone-number {
-    margin: 0;
+    font-size: 1.25rem;
   }
+}
+
+@media (min-width: 1200px) {
+  .content-wrapper {
+    padding: 1px 0 1077px;
+  }
+
+  .header-content {
+    padding: 45px 70px 7px;
+  }
+
+  .logo {
+    width: 392px;
+  }
+
+  .phone-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .phone-number {
+    font-size: 1.5rem;
+  }
+
   .footer-image {
-    aspect-ratio: 1.7;
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    max-width: 524px;
-    margin: 50px auto 0;
-    display: block;
+    width: 524px;
+    margin: 200px auto -215px;
   }
-  @media (max-width: 768px) {
-    .header-content {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .contact-info {
-      margin-top: 10px;
-    }
-  }
-  @media (max-width: 480px) {
-    .logo {
-      width: 200px;
-    }
-    .footer-image {
-      max-width: 90%;
-    }
-  }
+}
 </style>
+
 <section class="ripelliart-container">
   <div class="top-divider"></div>
-  <div class="main-content">
-    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/900e4410cbcbd12bb99024453df39379f1b4d631bdffbb30f2e31fd1fadeaee5?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="background-image" />
+  <div class="content-wrapper">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/900e4410cbcbd12bb99024453df39379f1b4d631bdffbb30f2e31fd1fadeaee5?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Background" class="background-image" />
     <header class="header-container">
-      <div class="header">
-        <div class="header-content">
+      <div class="header-content">
+        <div class="header-flex">
           <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b12fb2fafedd5d953f193c955899fd60d35e80bb7d34b90ef1759e6f170240f?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Ripelliart Logo" class="logo" />
           <div class="contact-info">
             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f470ddf32161dac43f6424e241e9307d5d8d058c9c416bd9acac94862120741b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="phone-icon" aria-hidden="true" />
