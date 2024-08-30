@@ -1,62 +1,220 @@
-<!DOCTYPE html>
+<style>
+.ripelliart-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 30px;
+}
 
-<html>
+.header {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-family: Ubuntu, sans-serif;
+  color: #1d1c34;
+  font-weight: 700;
+  line-height: 45px;
+  justify-content: center;
+  padding: 1px 0;
+}
 
-  <head>
+.header-content {
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
+  margin-bottom: -15px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 70px;
+}
 
-    <meta charset="utf-8" />
+.header-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1496px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+.logo {
+  aspect-ratio: 4;
+  object-fit: contain;
+  object-position: center;
+  width: 256px;
+  max-width: 100%;
+}
 
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+.contact-info {
+  align-self: start;
+  display: flex;
+  margin-top: 10px;
+  align-items: start;
+  gap: 30px;
+}
 
-    <!-- Please DO NOT remove this line, all link and script tags will be merged to here -->
+.phone-icon {
+  aspect-ratio: 0.96;
+  object-fit: contain;
+  object-position: center;
+  width: 49px;
+}
 
-    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+.main-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 1219px;
+  margin-top: 15px;
+  width: 100%;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  padding: 102px 80px 379px;
+}
 
-    <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-    <link rel="stylesheet" type="text/css" href="/css/Pop.css" />
+.content-wrapper {
+  position: relative;
+  display: flex;
+  margin-bottom: -76px;
+  width: 983px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
 
-  </head>
+.content-logo {
+  aspect-ratio: 1.7;
+  object-fit: contain;
+  object-position: center;
+  width: 404px;
+  max-width: 100%;
+}
 
-  <body class="flex-column">
+.tagline {
+  margin-top: 23px;
+  text-align: center;
+  width: 100%;
+}
 
-    <main class="pop main">
-      <section class="contactInfoSection">
-        <!-- This section contains contact information including images and a main heading. --> 
-        <img class="line" src="/assets/da66a5b20797ad7094f0a69b16b3215e.png" alt="alt text" />
-        <div class="contentWrapperDiv">
-          <!-- Wrapper for the main content components and layouts. --> 
-          <div class="flexRowDiv">
-            <!-- Flex container aligning child elements in a row. --> 
-            <img class="image1" src="/assets/b25c03f8918073ccdcddb875e0a63094.png" alt="alt text" />
-            <div class="flexRow1Div">
-              <!-- Second level flex container for nested alignment. --> 
-              <img class="image2" src="/assets/b09c73299afd3917af47eb14aab6a893.svg" alt="alt text" />
-              <div class="innerContentWrapperDiv">
-                <!-- Wrapper for additional nested content. --> 
-                <h1 class="wrapper3">+39 320 215 1166</h1>
-              </div>
-            </div>
-          </div>
+.announcement {
+  margin-top: 93px;
+  text-align: center;
+  width: 100%;
+}
+
+.cta-text {
+  font-size: 50px;
+  font-weight: 700;
+  align-self: stretch;
+  margin-top: 19px;
+  text-align: center;
+  width: 100%;
+}
+
+.social-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 182px;
+  margin-top: 48px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .header {
+    max-width: 100%;
+  }
+
+  .header-content {
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  .header-wrapper {
+    max-width: 100%;
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding: 100px 20px;
+  }
+
+  .content-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    max-width: 100%;
+  }
+
+  .announcement {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .cta-text {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .social-icon {
+    margin-top: 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>
+
+<section class="ripelliart-container">
+  <header class="header">
+    <div class="header-content">
+      <div class="header-wrapper">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/79045d765a201da89b645f4dea484b05cb8ff1485ff50691c6c33756757a86e3?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Ripelliart logo" class="logo" />
+        <div class="contact-info">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/208a8e6baba3d3cdd94a8ea4ce486a41eb6dde1ebd534b1c8262a09b80b6ea6a?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Phone icon" class="phone-icon" />
+          <p>+39 320 215 1166</p>
         </div>
-      </section>
+      </div>
+    </div>
+  </header>
 
-      <section class="repairAndRestorationSection" style="--src:url(/assets/325db180abdd1b112e438dcff8c6643e.png)">
-        <!-- Section for showcasing skin repair, restoration, and care services. --> 
-        <div class="flexColumnContainer">
-          <!-- Container for a flexible column layout. --> 
-          <img class="serviceImageHero" src="/assets/1737c8fd0d0d18bcb8bbd2c7ce5b4e32.png" alt="alt text" />
-          <h1 class="mainServiceTitle">Riparazione, restauro e cura della pelle.</h1>
-          <h1 class="onlinePresenceTitle">Stiamo perfezionando la nostra presenza online.</h1>
-          <h1 class="instagramFollowTitle">Nel frattempo seguiteci su Instagram!</h1>
-          <img class="serviceImageInstagram" src="/assets/4c71921bcb2648b4791f2b51321e9add.png" alt="alt text" />
-        </div>
-      </section>
-
-    </main>
-
-  </body>
-
-</html>
+  <main class="main-content">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/26c598817ec52e737d886fc2a2f26dd76217a8425aefb4408a9470034ce7a66b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="background-image" />
+    <div class="content-wrapper">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/386e1756480522ea8c9d9aedcc1ac048e3aa6bd0ae4cb56041276944a9e94e83?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Ripelliart logo" class="content-logo" />
+      <h1 class="tagline">Riparazione, restauro e cura della pelle.</h1>
+      <p class="announcement">Stiamo perfezionando la nostra presenza online.</p>
+      <p class="cta-text">Nel frattempo seguiteci su Instagram!</p>
+      <a href="#" aria-label="Follow us on Instagram">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/58a50b831af02a4630540c150495e765d59621cded34cb5bdb36bd165d8f5b50?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Instagram icon" class="social-icon" />
+      </a>
+    </div>
+  </main>
+</section>
