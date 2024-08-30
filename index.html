@@ -1,167 +1,62 @@
-<style>
-  .contact-section {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    padding: 1px 0 1077px;
-  }
+<!DOCTYPE html>
 
-  .background-image {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+<html>
 
-  .content-wrapper {
-    position: relative;
-    background-color: #fff;
-    width: 100%;
-    padding-bottom: 16px;
-  }
+  <head>
 
-  .header {
-    background-color: #fff;
-    z-index: 10;
-    width: 100%;
-    padding: 45px 70px 7px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    <meta charset="utf-8" />
 
-  .header-content {
-    display: flex;
-    width: 100%;
-    max-width: 1894px;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  .logo {
-    aspect-ratio: 4;
-    object-fit: contain;
-    object-position: center;
-    width: 392px;
-    max-width: 100%;
-  }
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
 
-  .contact-info {
-    display: flex;
-    align-items: flex-start;
-    gap: 38px;
-    margin: auto 0;
-  }
+    <!-- Please DO NOT remove this line, all link and script tags will be merged to here -->
 
-  .phone-icon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: 48px;
-    margin-top: 4px;
-  }
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
 
-  .phone-number {
-    flex-basis: auto;
-    font-size: 1rem;
-  }
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
 
-  .footer-image {
-    aspect-ratio: 1.7;
-    object-fit: contain;
-    object-position: center;
-    width: 524px;
-    align-self: center;
-    max-width: 100%;
-    margin: 200px 0 -215px;
-  }
+    <link rel="stylesheet" type="text/css" href="/css/Pop.css" />
 
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
+  </head>
 
-  @media (max-width: 991px) {
-    .contact-section {
-      max-width: 100%;
-      padding-bottom: 100px;
-    }
+  <body class="flex-column">
 
-    .content-wrapper {
-      max-width: 100%;
-    }
-
-    .header {
-      max-width: 100%;
-      padding: 0 20px;
-    }
-
-    .header-content {
-      max-width: 100%;
-    }
-
-    .footer-image {
-      margin: 40px 0 10px;
-    }
-
-    .phone-number {
-      font-size: 0.9rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .header {
-      padding: 20px 10px;
-    }
-
-    .logo {
-      width: 100%;
-      max-width: 300px;
-    }
-
-    .contact-info {
-      gap: 20px;
-    }
-
-    .phone-icon {
-      width: 36px;
-    }
-
-    .phone-number {
-      font-size: 0.8rem;
-    }
-
-    .footer-image {
-      width: 90%;
-      margin: 30px 0 10px;
-    }
-  }
-</style>
-
-<section class="contact-section">
-  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/900e4410cbcbd12bb99024453df39379f1b4d631bdffbb30f2e31fd1fadeaee5?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="background-image" />
-  <div class="content-wrapper">
-    <header class="header">
-      <div class="header-content">
-        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b12fb2fafedd5d953f193c955899fd60d35e80bb7d34b90ef1759e6f170240f?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Company Logo" class="logo" />
-        <div class="contact-info">
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f470ddf32161dac43f6424e241e9307d5d8d058c9c416bd9acac94862120741b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="phone-icon" aria-hidden="true" />
-          <p class="phone-number">
-            +39 320 215 1166
-          </p>
+    <main class="pop main">
+      <section class="contactInfoSection">
+        <!-- This section contains contact information including images and a main heading. --> 
+        <img class="line" src="/assets/da66a5b20797ad7094f0a69b16b3215e.png" alt="alt text" />
+        <div class="contentWrapperDiv">
+          <!-- Wrapper for the main content components and layouts. --> 
+          <div class="flexRowDiv">
+            <!-- Flex container aligning child elements in a row. --> 
+            <img class="image1" src="/assets/b25c03f8918073ccdcddb875e0a63094.png" alt="alt text" />
+            <div class="flexRow1Div">
+              <!-- Second level flex container for nested alignment. --> 
+              <img class="image2" src="/assets/b09c73299afd3917af47eb14aab6a893.svg" alt="alt text" />
+              <div class="innerContentWrapperDiv">
+                <!-- Wrapper for additional nested content. --> 
+                <h1 class="wrapper3">+39 320 215 1166</h1>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
-  </div>
-  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/767f8da2f588a40bbc079eb28ee0c2484c4c7ef69766ae8c5061744f2a50f374?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Footer Illustration" class="footer-image" />
-</section>
+      </section>
+
+      <section class="repairAndRestorationSection" style="--src:url(/assets/325db180abdd1b112e438dcff8c6643e.png)">
+        <!-- Section for showcasing skin repair, restoration, and care services. --> 
+        <div class="flexColumnContainer">
+          <!-- Container for a flexible column layout. --> 
+          <img class="serviceImageHero" src="/assets/1737c8fd0d0d18bcb8bbd2c7ce5b4e32.png" alt="alt text" />
+          <h1 class="mainServiceTitle">Riparazione, restauro e cura della pelle.</h1>
+          <h1 class="onlinePresenceTitle">Stiamo perfezionando la nostra presenza online.</h1>
+          <h1 class="instagramFollowTitle">Nel frattempo seguiteci su Instagram!</h1>
+          <img class="serviceImageInstagram" src="/assets/4c71921bcb2648b4791f2b51321e9add.png" alt="alt text" />
+        </div>
+      </section>
+
+    </main>
+
+  </body>
+
+</html>
