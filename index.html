@@ -15,7 +15,7 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            font-size: 30px;
+            font-size: 24px;
         }
         .header {
             background-color: #fff;
@@ -25,7 +25,7 @@
             font-family: 'Ubuntu', sans-serif;
             color: #1d1c34;
             font-weight: 700;
-            line-height: 45px;
+            line-height: 36px;
             justify-content: center;
             padding: 1px 0;
             position: sticky;
@@ -41,12 +41,12 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 15px;
         }
         .header-wrapper {
             display: flex;
             width: 100%;
-            max-width: 1496px;
+            max-width: 1200px;
             gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
@@ -56,20 +56,20 @@
             aspect-ratio: 4;
             object-fit: contain;
             object-position: center;
-            width: 256px;
+            width: 200px;
             max-width: 100%;
         }
         .contact-info {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
             justify-content: center;
         }
         .phone-icon {
             aspect-ratio: 0.96;
             object-fit: contain;
             object-position: center;
-            width: 30px;
+            width: 24px;
         }
         .main-content {
             display: flex;
@@ -81,7 +81,7 @@
             color: #fff;
             font-weight: 400;
             text-align: center;
-            padding: 102px 20px;
+            padding: 80px 20px;
         }
         .background-image {
             position: absolute;
@@ -95,7 +95,7 @@
             position: relative;
             display: flex;
             width: 100%;
-            max-width: 983px;
+            max-width: 800px;
             flex-direction: column;
             align-items: center;
         }
@@ -103,51 +103,69 @@
             aspect-ratio: 1.7;
             object-fit: contain;
             object-position: center;
-            width: 404px;
+            width: 300px;
             max-width: 100%;
         }
         .tagline {
-            margin-top: 23px;
+            margin-top: 20px;
             text-align: center;
             width: 100%;
+            font-size: 28px;
+            line-height: 1.4;
         }
         .announcement {
-            margin-top: 93px;
+            margin-top: 60px;
             text-align: center;
             width: 100%;
+            font-size: 22px;
+            line-height: 1.5;
         }
         .cta-text {
-            font-size: 50px;
+            font-size: 36px;
             font-weight: 700;
             align-self: stretch;
-            margin-top: 19px;
+            margin-top: 15px;
             text-align: center;
             width: 100%;
+            line-height: 1.3;
         }
         .social-icon {
             aspect-ratio: 1;
             object-fit: contain;
             object-position: center;
-            width: 182px;
-            margin-top: 48px;
+            width: 120px;
+            margin-top: 40px;
             max-width: 100%;
+            transition: transform 0.3s ease;
         }
-        @media (max-width: 991px) {
-            .header-wrapper {
-                flex-direction: column;
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 767px) {
+            .ripelliart-container {
+                font-size: 20px;
             }
-            .contact-info {
-                margin-top: 20px;
+            .header {
+                line-height: 30px;
+            }
+            .logo {
+                width: 180px;
+            }
+            .content-logo {
+                width: 250px;
+            }
+            .tagline {
+                font-size: 24px;
             }
             .announcement {
+                font-size: 20px;
                 margin-top: 40px;
             }
             .cta-text {
-                font-size: 40px;
+                font-size: 28px;
             }
             .social-icon {
-                margin-top: 40px;
-                width: 120px;
+                width: 100px;
             }
         }
         .visually-hidden {
@@ -170,21 +188,21 @@
                 <div class="header-wrapper">
                     <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/79045d765a201da89b645f4dea484b05cb8ff1485ff50691c6c33756757a86e3?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Ripelliart logo" class="logo">
                     <div class="contact-info">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/208a8e6baba3d3cdd94a8ea4ce486a41eb6dde1ebd534b1c8262a09b80b6ea6a?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="phone-icon">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/208a8e6baba3d3cdd94a8ea4ce486a41eb6dde1ebd534b1c8262a09b80b6ea6a?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="phone-icon" aria-hidden="true">
                         <p>+39 320 215 1166</p>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main-content">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/26c598817ec52e737d886fc2a2f26dd76217a8425aefb4408a9470034ce7a66b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="background-image">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/26c598817ec52e737d886fc2a2f26dd76217a8425aefb4408a9470034ce7a66b?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="background-image" aria-hidden="true">
             <div class="content-wrapper">
                 <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/386e1756480522ea8c9d9aedcc1ac048e3aa6bd0ae4cb56041276944a9e94e83?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Ripelliart logo" class="content-logo">
                 <h1 class="tagline">Riparazione, restauro e cura della pelle.</h1>
                 <p class="announcement">Stiamo perfezionando la nostra presenza online.</p>
                 <p class="cta-text">Nel frattempo seguiteci su Instagram!</p>
                 <a href="#" aria-label="Seguici su Instagram">
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/58a50b831af02a4630540c150495e765d59621cded34cb5bdb36bd165d8f5b50?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="social-icon">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/58a50b831af02a4630540c150495e765d59621cded34cb5bdb36bd165d8f5b50?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="social-icon" aria-hidden="true">
                 </a>
             </div>
         </main>
