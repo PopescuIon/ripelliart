@@ -72,19 +72,20 @@
             object-position: center;
             width: 24px;
         }
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            flex-grow: 1;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: 400;
-            text-align: center;
-            padding: 80px 20px;
-        }
+      .main-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 100vh; /* Ensure the main content takes full height */
+}
         .background-image {
             position: absolute;
             inset: 0;
@@ -93,19 +94,20 @@
             object-fit: cover;
             object-position: center;
         }
-        .content-wrapper {
-            position: relative;
-            display: flex;
-            width: 100%;
-            max-width: 800px;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
+       .content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    flex-grow: 1; /* Allow the content-wrapper to grow and center vertically */
+   }
         .content-logo {
             aspect-ratio: 1.7;
             object-fit: contain;
