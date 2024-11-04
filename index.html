@@ -10,15 +10,15 @@
             padding: 0;
             font-family: 'Montserrat', sans-serif;
         }
-        .ripelliart-container {
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            font-size: 24px;
-            min-height: 100vh;
-        }
-        .header {
+  .ripelliart-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-size: 24px;
+    min-height: 100vh;
+}
+  .header {
     background-color: #fff;
     display: flex;
     width: 100%;
@@ -29,10 +29,11 @@
     line-height: 36px;
     justify-content: center;
     padding: 1px 0;
-    position: fixed; /* Updated to fixed */
+    position: fixed; /* Fixed position */
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px; /* Set a fixed height for the header */
 }
         .header-content {
             background-color: #fff;
@@ -87,20 +88,21 @@
             object-position: center;
             width: 24px;
         }
-      .main-content {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          flex-grow: 1;
-          width: 100%;
-          align-items: center;
-          justify-content: center;
-          color: #fff;
-          font-weight: 400;
-          text-align: center;
-          padding: 80px 0px;
-          min-height: 100vh; /* Ensure the main content takes full height */
-      }
+     .main-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding: 80px 0px;
+    padding-top: 100px; /* Add padding to avoid content being hidden behind the fixed header */
+    min-height: calc(100vh - 80px); /* Adjust min-height based on header height */
+}
         .background-image {
             position: absolute;
             inset: 0;
@@ -119,7 +121,7 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            padding: 0 20px;
+            padding: 50px 20px;
             box-sizing: border-box;
             flex-grow: 1; /* Allow the content-wrapper to grow and center vertically */
        }
