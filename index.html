@@ -19,21 +19,21 @@
             min-height: 100vh;
         }
         .header {
-            background-color: #fff;
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            font-family: 'Ubuntu', sans-serif;
-            color: #1d1c34;
-            font-weight: 700;
-            line-height: 36px;
-            justify-content: center;
-            padding: 1px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    color: #1d1c34;
+    font-weight: 700;
+    line-height: 36px;
+    justify-content: center;
+    padding: 1px 0;
+    position: fixed; /* Updated to fixed */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
         .header-content {
             background-color: #fff;
             z-index: 10;
@@ -49,8 +49,7 @@
             width: 100%;
             max-width: 1200px;
             gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
         .logo {
@@ -60,11 +59,27 @@
             width: 200px;
             max-width: 100%;
         }
+        /* Navigation menu styling */
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+        }
+        .nav-menu a {
+            color: #1d1c34;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-menu a:hover {
+            background-color: #f0f0f0;
+        }
         .contact-info {
             display: flex;
             align-items: center;
             gap: 10px;
-            justify-content: center;
         }
         .phone-icon {
             aspect-ratio: 0.96;
@@ -73,19 +88,19 @@
             width: 24px;
         }
       .main-content {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    flex-grow: 1;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: 400;
-    text-align: center;
-    padding: 80px 0px;
-    min-height: 100vh; /* Ensure the main content takes full height */
-}
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          flex-grow: 1;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-weight: 400;
+          text-align: center;
+          padding: 80px 0px;
+          min-height: 100vh; /* Ensure the main content takes full height */
+      }
         .background-image {
             position: absolute;
             inset: 0;
@@ -95,19 +110,19 @@
             object-position: center;
         }
        .content-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-    flex-grow: 1; /* Allow the content-wrapper to grow and center vertically */
-   }
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+            flex-grow: 1; /* Allow the content-wrapper to grow and center vertically */
+       }
         .content-logo {
             aspect-ratio: 1.7;
             object-fit: contain;
@@ -150,44 +165,45 @@
         .social-icon:hover {
             transform: scale(1.1);
         }
-        @media (max-width: 767px) {
-            .ripelliart-container {
-                font-size: 20px;
-            }
-            .header {
-                line-height: 30px;
-            }
-            .logo {
-                width: 180px;
-            }
-            .content-logo {
-                width: 250px;
-            }
-            .tagline {
-                font-size: 24px;
-            }
-            .announcement {
-                font-size: 20px;
-                margin-top: 40px;
-            }
-            .cta-text {
-                font-size: 28px;
-            }
-            .social-icon {
-                width: 100px;
-            }
-        }
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
+      @media (max-width: 767px) {
+    .ripelliart-container {
+        font-size: 20px;
+    }
+    .header {
+        line-height: 30px;
+    }
+    .header-wrapper {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align elements */
+        gap: 10px; /* Adjust spacing */
+    }
+    .logo {
+        width: 180px;
+    }
+    .nav-menu {
+        font-size: 16px;
+        justify-content: center; /* Center the navigation menu */
+    }
+    .contact-info {
+        justify-content: center; /* Center align contact info */
+    }
+    .content-logo {
+        width: 250px;
+    }
+    .tagline {
+        font-size: 24px;
+    }
+    .announcement {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .cta-text {
+        font-size: 28px;
+    }
+    .social-icon {
+        width: 100px;
+    }
+}
     </style>
 </head>
 <body>
@@ -196,6 +212,9 @@
             <div class="header-content">
                 <div class="header-wrapper">
                     <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/79045d765a201da89b645f4dea484b05cb8ff1485ff50691c6c33756757a86e3?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="Ripelliart logo" class="logo">
+                    <nav class="nav-menu">
+                      
+                    </nav>
                     <div class="contact-info">
                         <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/208a8e6baba3d3cdd94a8ea4ce486a41eb6dde1ebd534b1c8262a09b80b6ea6a?placeholderIfAbsent=true&apiKey=0bca8f5a69044fd1a9b3b90152ffc1d8" alt="" class="phone-icon" aria-hidden="true">
                         <p>+39 320 215 1166</p>
